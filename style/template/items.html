@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>奶粉</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/weui.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/jquery-weui.css" />
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js">	
+		</script>
+		<script type="text/javascript" src="../js/jquery.lazyload.js"></script>
+		<script type="text/javascript" src="../js/jquery-weui.js" ></script>
+		<script type="text/javascript" src="../js/ConfigUrl.js"></script>
+		<script type="text/javascript" src="../js/rem.js"></script>
+		<script type="text/javascript" src="../js/items.js"></script>
+		<script type="text/javascript" src="../js/template.js"></script>
+		<style>
+			.d_container2 ul {
+				width: 95%;
+				height: auto;
+				overflow: hidden;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			
+			.d_container2 ul li {
+				width: 49%;
+				float: left;
+				text-align: center;
+				border-bottom: 1px solid #CCCCCC;
+				padding-bottom: 8px;
+		
+		
+		
+			}
+			
+			.d_container2 ul li:nth-child(2n+1) {
+				border-right: 1px solid #CCCCCC;
+	
+			}
+			
+			.d_container2 ul li img {
+				width: 110px;
+			}
+		
+			.Title{
+				font-size: 14px;
+				width: 90%;
+				text-align: left;
+				margin: 0 auto;
+				overflow: hidden;
+				 text-overflow: ellipsis;
+		
+			}
+			.Yen{
+				text-decoration:line-through;
+				color: #999999;
+				font-size: 13px;
+				margin-left: 5px;
+				
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #fff;">
+		<div class="search_bar search_bar_items">
+			<form action="" method="get">
+				<div class="search_bar_form">
+					<i class="iconfont icon-sousuo"></i>
+					<input type="search" value="" id="search-box" name="keyword" placeholder="商品名称搜索" class="search">
+				</div>
+			</form>
+		</div>
+		<div class="his_tpl">
+			<div class="search_bar search_bar_items">
+				<form id="search_form" action="" method="get">
+					<div class="search_bar_form">
+						<input type="search" value="" name="keyword" placeholder="商品名称搜索" class="search">
+						<span class="search-cancel-btn">取消</span>
+					</div>
+				</form>
+			</div>
+			<p class="title">搜索历史</p>
+			<div class="tip">
+			</div>
+			<p class="clear-btn">清空记录</p>
+		</div>
+
+		<div class="d_container2">
+			<ul>
+			
+
+	
+	
+			
+			</ul>
+
+		</div>
+
+		<div class="weui-infinite-scroll" style="display:none">
+			<div class="infinite-preloader"></div>
+			正在加载...
+		</div>
+		<span id="moverTop" style="display:none"></span>
+	</body>
+
+</html>

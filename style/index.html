@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<title>咿呀孕婴店</title>
+		<script type="text/javascript" src="js/ConfigUrl.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<style>
+			.Dcontainer {
+				width: 100%;
+				height: 135px;
+				overflow: hidden;
+				background-image: url(img/ban.jpg);
+				background-size: 100% 100%;
+				position: relative;
+			}
+			
+			.Dhead {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				color: #FFFFFF;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-image: url(img/yinying.png);
+				background-size: 100% 100%;
+			}
+			
+			.Dleft {
+				float: left;
+				width: 75px;
+				height: 75px;
+				border-radius: 75px;
+				border: 1px solid #fff;
+				overflow: hidden;
+				margin: 11px;
+			}
+			
+			.Dleft img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.Dright {
+				width: 60%;
+				height: auto;
+				overflow: hidden;
+				float: left;
+				margin: 10px;
+			}
+			
+			.Diphone {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				text-align: center;
+			}
+			
+			.Diphone img {
+				width: 20px;
+				vertical-align: middle;
+			}
+			
+			.Dtitle {
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 30px;
+			}
+			
+			.Ddetail {
+				font-size: 14px;
+			}
+		</style>
+		<script>
+			
+//				var lastUlr="stores/mian.htm";
+//				$.ajax({
+//					type: "post",
+//					url:'http://api2.baobeimt.cn/stores/mian.htm',
+//					dataType: 'json',
+//					
+//					success: function(data) {
+//						var data=JSON.parse(data);
+//						console.log(data)
+//					},
+//				});
+
+	function zyz(data){
+    alert("11");
+};
+$(function(){
+    var _href=location.href;
+    var param=_href.substr(_href.indexOf('?'));
+    var oHead = document.getElementsByTagName('HEAD').item(0); 
+    var oScript= document.createElement("script"); 
+    oScript.type = "text/javascript"; 
+      oScript.src=apiUrl.cats+param+'?callback=zyz'; 
+    oHead.appendChild(oScript); 
+});
+		
+		</script>
+	</head>
+
+	<body>
+		<div class="Dcontainer">
+			<div class="Dhead">
+
+				<div class="Dleft"><img src="img/text2.jpg"></div>
+				<div class="Dright">
+					<div class="Dtitle">咿呀孕婴店</div>
+					<div class="Ddetail">欢迎光临我的微店,小店提供精选海淘商品,保税区直供,国内快递直邮到家</div>
+				</div>
+				<div class="Diphone"><img src="img/Diphone.png"> 18591936413 </div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
